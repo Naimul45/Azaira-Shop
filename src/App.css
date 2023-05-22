@@ -76,7 +76,7 @@ a {
 
 .third {
   background-color: var(--color-131921);
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 
@@ -270,9 +270,7 @@ a {
   width: 700px
 }
 
-.labelform {
-  border: none;
-}
+
 
 .line:hover {
   cursor: pointer

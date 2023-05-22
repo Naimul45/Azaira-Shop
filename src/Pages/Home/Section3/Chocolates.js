@@ -5,7 +5,7 @@ import Section3 from './Section3';
 const Chocolates = () => {
   const [chocolates, setChocolates] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/chocolateproducts')
+    fetch('https://departmental-store-server.vercel.app/chocolateproducts')
       .then(res => res.json())
       .then(data => {
         setChocolates(data)

@@ -8,7 +8,7 @@ import { toast } from 'react-hot-toast';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BiSearch } from 'react-icons/bi';
 import { BsSearch } from 'react-icons/bs';
-import { RiShoppingCart2Line } from 'react-icons/ri';
+
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   // console.log(user)
@@ -89,7 +89,7 @@ const Navbar = () => {
             </li>
             <li><Link to="/dashboard" className=' ancor  text-lg font-bold mx-2'>Dashboard</Link></li>
             <li>
-              <Link to="/home" className='text-white text-lg font-bold mx-2 ancor '>Contact</Link>
+              <Link to="/contact" className='text-black text-lg font-bold mx-2 ancor '>Contact</Link>
             </li>
           </ul>
         </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
           <Link to="/addingservice" className='ancor text-white text-lg font-bold mx-2'>Services</Link>
           <Link to="/home" className=' ancor text-white text-lg font-bold mx-2'>Blogs</Link>
           <Link to="/dashboard" className=' ancor text-white text-lg font-bold mx-2'>Dashboard</Link>
-          <Link to="/home" className='text-white text-lg font-bold mx-2 ancor '>Contact</Link>
+          <Link to="/contact" className='text-white text-lg font-bold mx-2 ancor '>Contact</Link>
 
         </div>
 

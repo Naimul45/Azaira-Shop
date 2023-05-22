@@ -16,7 +16,7 @@ const Services = () => {
         </div>
 
 
-        <div className="flex mt-10 mr-0">
+        <div className="flex mt-10 mr-0 mb-[-40px]">
           <div style={{ width: '330px' }} className="mr-6 lg:block hidden">
             <div className='bg-white p-3 rounded ml-2'>
               <p className="text-lg font-semibold pb-2">Shop By Categories</p>

@@ -11,7 +11,7 @@ const AddingService = ({ grid }) => {
   const { isLoading, data: services = [] } = useQuery({
     queryKey: ["services"],
     queryFn: async () => {
-      const res = await fetch('http://localhost:5000/addservice');
+      const res = await fetch('https://departmental-store-server.vercel.app/addservice');
       const data = res.json()
       return data
 

@@ -7,7 +7,7 @@ const ShampooInfo = () => {
   const { isLoading, data: shampoos = [] } = useQuery({
     queryKey: ["shapoos"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/shampoo")
+      const res = await fetch("https://departmental-store-server.vercel.app/shampoo")
       const data = await res.json()
       return data
 

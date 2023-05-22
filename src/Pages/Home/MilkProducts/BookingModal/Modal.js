@@ -12,7 +12,7 @@ const Modal = (props) => {
   const handleSubmitInfo = (data) => {
     console.log(data)
 
-    fetch('http://localhost:5000/bookings', {
+    fetch('https://departmental-store-server.vercel.app/bookings', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

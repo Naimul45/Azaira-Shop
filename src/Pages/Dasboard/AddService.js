@@ -25,7 +25,7 @@ const AddService = () => {
 
   const onSubmit = data => {
     console.log(data)
-    fetch('http://localhost:5000/addservice', {
+    fetch('https://departmental-store-server.vercel.app/addservice', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

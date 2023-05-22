@@ -17,7 +17,7 @@ const MilkProductsInfo = () => {
   const { isLoading, data: milkProducts = [] } = useQuery({
     queryKey: ["milkproducts"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/products")
+      const res = await fetch("https://departmental-store-server.vercel.app/products")
       const data = await res.json()
       return data
 
@@ -27,7 +27,7 @@ const MilkProductsInfo = () => {
 
   //   queryKey: ["milkProducts"],
   //   queryFn: async () => {
-  //     const res = await fetch(`http://localhost:5000/products`)
+  //     const res = await fetch(`https://departmental-store-server.vercel.app/products`)
 
   //       // ?email=${user?.email}
   //       // , {
@@ -46,7 +46,7 @@ const MilkProductsInfo = () => {
   }
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/products?email=${user?.email}`, {
+  //   fetch(`https://departmental-store-server.vercel.app/products?email=${user?.email}`, {
   //     headers: {
   //       authorization: `bearer ${localStorage.getItem('shoptoken')}`
   //     }

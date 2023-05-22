@@ -6,7 +6,7 @@ const CakeProducts = () => {
   const { isLoading, refetch, data: cakes = [] } = useQuery({
     queryKey: ["cakes"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/cake")
+      const res = await fetch("https://departmental-store-server.vercel.app/cake")
       const data = await res.json()
       return data
 
@@ -15,7 +15,7 @@ const CakeProducts = () => {
   return (
 
     <>
-      <h1 className='text-2xl font-bold title'>Special Offers</h1>
+      <h1 className='text-2xl font-bold title ml-5'>Special Offers</h1>
 
       <div className='py-3 w-full flex flex-col lg:flex-row px-3'>
         <div className="w-full mb-2 lg:mb-0 lg:w-3/12 bg-teal-500 p-2 mr-3 rounded-3">

@@ -11,6 +11,7 @@ import Signup from "../Signup/Signup";
 import Review from "../Pages/Services/Review/Review";
 import Users from "../Pages/AllUsers/Users";
 import AdminRoute from "./AdminRoute";
+import Contact from "../Pages/Contact/Contact";
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -51,7 +52,11 @@ const Router = createBrowserRouter([
       {
         path: '/users',
         element: <AdminRoute><Users></Users></AdminRoute>
-      }
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
+      },
 
     ]
   }

@@ -25,7 +25,7 @@ const Review = () => {
   }
 
   const onSubmit = data => {
-    fetch('http://localhost:5000/review', {
+    fetch('https://departmental-store-server.vercel.app/review', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -40,11 +40,11 @@ const Review = () => {
   }
 
   return (
-    <div className="row mr-0 bg-base-200">
-      <div className="col-2   bg-white">
+    <div className="flex mr-0 bg-base-200 mb-[-40px]">
+      <div className="mb-[-40px] pb-2 pt-2 lg:w-[270px] w-0 pr-5 h-[540px]  bg-white ">
         <DashboardLeft></DashboardLeft>
       </div>
-      <div className="col-10">
+      <div className="pl-6">
         <div className='flex justify-between'>
           <p className="text-2xl font-bold text-secondary mb-3 mt-2">Review</p>
           <div className="dropdown dropdown-end lg:hidden block">
@@ -67,19 +67,19 @@ const Review = () => {
           </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <input {...register("name")} type="text" placeholder="Your Name" className="input border-none w-full max-w-xs" /> <br /><br />
-          <input type="text"{...register("photourl")} placeholder="Your PhotoURL" className="input border-none w-full max-w-xs" /> <br /><br />
-          <input type="text" placeholder="Shop Name"{...register("shopname")} className="input border-none w-full max-w-xs" /> <br />
+          <input {...register("name")} type="text" placeholder="Your Name" className="input border-none lg:w-full w-[290px]" /> <br /><br />
+          <input type="text"{...register("photourl")} placeholder="Your PhotoURL" className="input border-none lg:w-full w-[290px]" /> <br /><br />
+          <input type="text" placeholder="Shop Name"{...register("shopname")} className="input border-none lg:w-full w-[290px]" /> <br />
           <p className="text-lg font-semibold mb-2 mt-2">Review : Out Of 5</p>
-          <select className="select w-80 "{...register("review")}>
+          <select className="select lg:w-80 w-[290px] "{...register("review")}>
             <option selected>5 Star</option>
             <option>4 Star</option>
             <option>3 Star</option>
             <option>2 Star</option>
             <option>1 Star</option>
           </select><br /><br />
-          <textarea className="textarea w-80"{...register("description")} placeholder="Description"></textarea><br /><br />
-          <input type="submit" className='btn btn-secondary bg-pink-600 w-80 border-none mb-4' />
+          <textarea className="textarea lg:w-80 w-[290px]"{...register("description")} placeholder="Description"></textarea><br /><br />
+          <input type="submit" className='btn btn-active btn-secondary  lg:w-80 w-[290px] border-none mb-4' />
 
         </form>
 

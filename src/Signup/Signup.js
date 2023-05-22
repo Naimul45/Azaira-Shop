@@ -26,7 +26,7 @@ const Signup = () => {
       email: data.email,
       photourl: data.photourl
     }
-    fetch('http://localhost:5000/users', {
+    fetch('https://departmental-store-server.vercel.app/users', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -85,28 +85,28 @@ const Signup = () => {
           <h1 className='text-2xl font-bold text-center mt-4'>SignUp</h1>
 
           <div className="card-body">
-            <div className="form-control labelform">
+            <div className="form-control" style={{ border: 'none' }}>
 
 
-              <input {...register("name", { required: true })} type="text" placeholder="Enter Your Name" className="input input-bordered" />
+              <input {...register("name", { required: true })} type="text" placeholder="Enter Your Name" className="input input-bordered w-full" />
             </div>
-            <div className="form-control labelform">
+            <div className="form-control" style={{ border: 'none' }}>
 
-              <input {...register('photourl', { required: true })} type="text" placeholder="Photo URL" className="input input-bordered" />
+              <input {...register('photourl', { required: true })} type="text" placeholder="Photo URL" className="input input-bordered w-full" />
             </div>
-            <div className="form-control labelform">
+            <div className="form-control" style={{ border: 'none' }}>
 
-              <input {...register("email", { required: true })} type="email" placeholder="Enter Your Email" className="input input-bordered" />
+              <input {...register("email", { required: true })} type="email" placeholder="Enter Your Email" className="input input-bordered w-full" />
             </div>
-            <div className="form-control labelform">
+            <div className="form-control" style={{ border: 'none' }}>
 
-              <input {...register("password", { required: true })} type="password" placeholder="password" className="input input-bordered" />
+              <input {...register("password", { required: true })} type="password" placeholder="password" className="input input-bordered w-full" />
               <label className="label">
                 <h1 className="label-text-alt link link-hover text-lg">Forgot password? <Link to="/login" className='text-lg font-semibold text-red-500'>Login</Link></h1>
               </label>
             </div>
-            <div className="form-control mt-6 labelform">
-              <button className="btn btn-primary ">Signup</button>
+            <div className="form-control" style={{ border: 'none', width: '100%' }}>
+              <button className="btn btn-active btn-secondary w-full ">Signup</button>
             </div>
           </div>
         </div>

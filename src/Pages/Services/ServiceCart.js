@@ -17,7 +17,7 @@ const ServiceCart = ({ service, grid, setProducts }) => {
   }
   return (
     <div >
-      <div className="card card-product bg-base-100 shadow-xl border-none">
+      <div className="card card-product bg-base-100 shadow-xl border-none lg:ml-0 ml-2 ">
         <div className='products-card  relative'>
           <div className='absolute icon'>
             <img className="py-2" src="../../images/wish.svg" alt="" />
